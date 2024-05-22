@@ -8,8 +8,9 @@ on:
     branches:
       - main
 jobs:
-  runs-on: ubuntu-latest
-  container: python:3.9-slim
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
   steps:
     - name: Checkout
       uses: actions/checkout@v3
